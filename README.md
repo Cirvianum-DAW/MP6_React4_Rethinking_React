@@ -203,13 +203,14 @@ Evitarem passar la informació rleativa al tipus d'estudiant i les places dispon
         setDetallsEstudiant={setDetallsEstudiant}
         handleItemSelection={handleItemSelection}
         setIsRestorePlaces={setIsRestorePlaces}
-      />
+  />
 ```
 
 Abans estàvem passant fins a 7 props al `Form` i ara només en passarem 3. Recordem que feien aquestes funcions:
 
 - `setDetallsEstudiant`: guarda les dades introduïdes al formulari a la variable d'estat `detallsEstudiant` de l'`App.jsx`.
 - `handleItemSelection`: guarda la ID de l'estudiant i l'acció a realitzar en les variables d'estat corresponents (`selectedItemId` i `action`) de l'`App.jsx`.
+- `setIsRestorePlaces`: actualitza la variable d'estat `isRestorePlaces` que ens permet identificar si estem editant un usuari o no.
 
 Abans teníem aquí també les variables i funcions corresponents amb el tipus d'estudiant, les places i les seves funcions de modificació. Ara ho farem directament a la llista d'estudiants. Afegim-ho:
 
